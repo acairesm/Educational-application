@@ -1,0 +1,24 @@
+<ion-content>
+  <img src="../../assets/img/FundoDesbord.jpeg" class="fundoDashboard-img"/>
+
+  <h1 class="botaojogo">Jogo de Alfabetização</h1>
+  <p class="botaojogo">Qual é o animal?</p>
+
+  <div class="animal-container">
+    <img class="botaojogo" [src]="animalImagem" alt="{{ animalNome }}" class="animal-imagem" />
+  </div>
+
+  <div  class="botaojogo" class="opcoes-container">
+    <ion-button class="botaojogo" *ngFor="let opcao of opcoes"  expand="block" color="success" (click)="verificarResposta(opcao)">
+      {{ opcao }}
+    </ion-button>
+  </div>
+  
+  <p class="botaojogo" *ngIf="resultadoMensagem">{{ resultadoMensagem }}</p>
+
+  <ion-button class="botaojogo" expand="block" color="success" (click)="mudarAnimal()">Próximo Animal</ion-button>
+
+  <ion-button class="botaojogo"expand="block" color="success" (click)="voltarDashboard()">
+    <ion-icon  name="arrow-back-outline"></ion-icon> Voltar
+  </ion-button>
+</ion-content>

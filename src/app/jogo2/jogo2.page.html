@@ -1,0 +1,27 @@
+  <!-- Links para as fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+
+  <ion-content class="fundoDashboard">
+    <img src="../../assets/img/FundoDesbord.jpeg" class="fundoDashboard-img"/>
+    <img src="../../assets/img/elefante.png" class="elefante-img"/>
+    <img src="../../assets/img/LivroDesbord.png" class="livroDashboard-img"/>
+    
+    <h1 class="Direita"><ion-icon fill="outline" expand="block" color="success"  name="arrow-forward-outline" (click)="navegarDireita2()"  ></ion-icon></h1>
+    <h1 class="Esquerda"><ion-icon fill="outline" expand="block" color="success" name="arrow-back-outline" (click)="navegarEsquerda2()"></ion-icon></h1>
+
+
+    <!-- Ícones de navegação -->
+  </ion-content>
+
+  <!-- O card deve estar abaixo dos outros elementos -->
+  <ion-card class="card-foreground" color="success">
+    <ion-card-header>
+      <ion-card-title class="titulo-com-borda">Jogo do Elefante</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Descubra o nome dos animais com este jogo educativo! Observe a imagem e escolha a opção correta, ajudando nossos amigos animais de forma divertida enquanto aprende a ler!   
+      <ion-button class="jogarbotao" (click)="AbrirPagina2()" >Jogar</ion-button> 
+    </ion-card-content>
+  </ion-card>
