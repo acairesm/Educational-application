@@ -1,27 +1,30 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.fundo {
+    position: relative; /* Para permitir o posicionamento absoluto do img */
+    overflow: hidden; /* Para ocultar qualquer parte da imagem que exceda o elemento */
+    min-height: 130vh; /* Garante que o conteúdo ocupe toda a altura da tela */
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.fundo img {
+    position: absolute; /* Permite que a imagem seja posicionada livremente */
+    top: 27%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    width: 100%; /* Faz a imagem ocupar 100% da largura do pai */
+    height: 100%; /* Faz a imagem ocupar 100% da altura do pai */
+    object-fit: cover; /* Cobre todo o espaço, mantendo a proporção */
+    transform: translate(-50%, -50%); /* Centraliza a imagem corretamente */
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+.texto {
+    position: absolute; /* Permite posicionar o texto */
+    top: 43%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza corretamente */
+    font-family: "Spicy Rice", serif;
+    font-size: 67px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: rgb(0, 47, 255); /* Define a cor do texto (ajuste conforme necessário) */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    line-height: 1.5; /* Ajuste o espaçamento entre as linhas */
+    z-index: 1; /* Garante que o texto fique acima da imagem de fundo */
+    text-shadow: 2px 2px 3px rgba(0, 0, 255, 0.5), 0 0 10px rgba(0, 0, 255, 0.2); /* Sombra mais suave */
 
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
 }

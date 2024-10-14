@@ -1,0 +1,34 @@
+
+
+
+
+
+<ion-content>
+  <img src="../../assets/img/FundoDesbord.jpeg" class="fundoDashboard-img"/>
+
+
+  <h1 class="titulo-com-borda">Jogo de Alfabetização</h1>
+  <p>Complete a palavra com a letra correta:</p>
+
+
+    
+  <div  class="palavra-container" class="botaojogo">
+    <img [src]="animalImagem" alt="{{ animalNome }}" class="animal-imagem" />
+    <h2>{{ palavraCorreta }}</h2> <!-- A palavra que precisa ser completada -->
+  </div>
+
+  <div class="opcoes-container">
+    <ion-button botaojogo *ngFor="let letra of opcoes" expand="block" color="success" (click)="verificarResposta(letra)">
+      {{ letra }}
+    </ion-button>
+  </div>
+  
+  <p class="botaojogo" *ngIf="resultadoMensagem">{{ resultadoMensagem }}</p>
+
+  <ion-button class="botaojogo"  expand="block" color="success" (click)="mudarAnimal()">Próximo Animal</ion-button>
+
+  <ion-button class="botaojogo" expand="block" color="success" (click)="voltarDashboard()">
+    <ion-icon  name="arrow-back-outline"></ion-icon> Voltar
+  </ion-button>
+  
+</ion-content>

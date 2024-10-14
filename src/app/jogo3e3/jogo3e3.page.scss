@@ -1,0 +1,116 @@
+h1 {
+    text-align: center;
+    color: #007dfa;
+  }
+  
+  ion-button {
+    margin: 5px;
+  }
+  
+  .fundoDashboard-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 96vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .titulo-com-borda {
+    color: #ffffff !important; /* Cor do texto */
+    padding: 10px; /* Espaço interno para a borda */
+    text-shadow: 2px 2px 0px black; /* Contorno preto nas letras */
+    font-family: "Anton", sans-serif;
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .forca {
+    position: absolute;
+    top: 5%; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  
+  .forcadois {
+    position: absolute;
+    top: 12%; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  
+  .forca3 {
+    position: absolute;
+    top: 20%; /* Ajuste conforme necessário */
+    left: 40%;
+    transform: translate(-50%, 0);
+    font-size: 20px; /* Ajuste o tamanho conforme necessário */
+  }
+
+  .forca4 {
+    position: absolute;
+    top: 25%; /* Ajuste conforme necessário */
+    left: 35%;
+    transform: translate(-50%, 0);
+    font-size: 15px; /* Ajuste o tamanho conforme necessário */
+
+  }
+
+
+  
+  .input-container {
+    position: absolute;
+    top: 40%; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Para que ocupe mais espaço horizontalmente */
+  }
+  
+  .letras {
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .red{
+    color: #10DC60;
+    font-size: 17px; /* Ajuste o tamanho conforme necessário */
+    font-family: Arial, sans-serif; /* Define a fonte como Arial */
+
+  }
+
+  .Voltar {
+    position: absolute;
+    top: 70%; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.jogarbotao {
+    color: #ffffff !important; /* Cor do texto */
+    font-family: "Anton", sans-serif;
+    float: right; /* Alinha o botão à direita */
+}
+
+
+.vcperdeu {
+
+    position: absolute;
+    top: 45%; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.era {
+    position: absolute;
+    top: 50%; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.jogarnova{
+    position: absolute;
+    top: 55%; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

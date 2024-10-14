@@ -1,0 +1,120 @@
+.fundoDashboard {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+}
+
+.fundoDashboard-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre todo o espaço, mantendo a proporção */
+    z-index: 1; /* Fica atrás da imagem do livro */
+}
+
+
+.titulo-com-borda {
+    color: #ffffff !important; /* Cor do texto */
+    padding: 10px; /* Espaço interno para a borda */
+    text-shadow: 2px 2px 0px black; /* Contorno preto nas letras */
+    font-family: "Anton", sans-serif;
+
+}
+
+.textos{
+font-family:serif;   
+}
+
+.jogarbotao {
+    color: #ffffff !important; /* Cor do texto */
+    font-family: "Anton", sans-serif;
+    float: right; /* Alinha o botão à direita */
+}
+
+.livroDashboard-img {
+    position: absolute;
+    top: 20%; /* Ajusta conforme necessário para centralizar verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    width: 2000px; /* Tamanho relativo ao pai, ajuste conforme necessário */
+    height:auto ;
+    transform: translate(-50%, -50%); /* Centraliza o elemento */
+    z-index: 2; /* Fica acima da imagem de fundo */
+}
+
+
+.TextoJogos {
+    position: absolute; /* Permite posicionar o texto */
+    top: 15%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza corretamente */
+    font-family: "Spicy Rice", serif;
+    font-size: 67px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: rgb(0, 47, 255); /* Define a cor do texto (ajuste conforme necessário) */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    line-height: 1.5; /* Ajuste o espaçamento entre as linhas */
+    z-index: 1; /* Garante que o texto fique acima da imagem de fundo */
+    text-shadow: 2px 2px 3px rgba(0, 0, 255, 0.5), 0 0 10px rgba(0, 0, 255, 0.2); /* Sombra mais suave */
+}
+
+.Direita {
+    position: absolute; /* Permite posicionar o texto */
+    top: 75%; /* Centraliza verticalmente */
+    left: 60%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza corretamente */
+    font-family: "Spicy Rice", serif;
+    font-size: 67px; /* Ajuste o tamanho da fonte conforme necessário */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    line-height: 1.5; /* Ajuste o espaçamento entre as linhas */
+    z-index: 1; /* Garante que o texto fique acima da imagem de fundo */
+    text-shadow: 2px 2px 3px rgba(0, 0, 255, 0.5), 0 0 10px rgba(0, 0, 255, 0.2); /* Sombra mais suave */
+
+}
+
+.Esquerda {
+    position: absolute; /* Permite posicionar o texto */
+    top: 75%; /* Centraliza verticalmente */
+    left: 40%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza corretamente */
+    font-family: "Spicy Rice", serif;
+    font-size: 67px; /* Ajuste o tamanho da fonte conforme necessário */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    line-height: 1.5; /* Ajuste o espaçamento entre as linhas */
+    z-index: 1; /* Garante que o texto fique acima da imagem de fundo */
+    text-shadow: 2px 2px 3px rgba(0, 0, 255, 0.5), 0 0 10px rgba(0, 0, 255, 0.2); /* Sombra mais suave */
+
+}
+
+
+.leaoDesbord-img{
+    position: absolute;
+    top: 45%; /* Ajusta conforme necessário para centralizar verticalmente */
+    left: 19%; /* Centraliza horizontalmente */
+    width: 150px; /* Tamanho relativo ao pai, ajuste conforme necessário */
+    height:auto ;
+    transform: translate(-50%, -50%); /* Centraliza o elemento */
+    z-index: 2; /* Fica acima da imagem de fundo */
+
+}
+
+
+
+.card-foreground {
+    position: absolute;
+    top: 45%; /* Ajusta conforme necessário para centralizar verticalmente */
+    left: 64%; /* Centraliza horizontalmente */
+    width: 250px; /* Tamanho relativo ao pai, ajuste conforme necessário */
+    height:auto ;
+    transform: translate(-50%, -50%); /* Centraliza o elemento */
+    z-index: 1; /* Fica acima da imagem de fundo */
+
+  }
+
+.ion-icon{
+    z-index: 1; /* Fica acima da imagem de fundo */
+}
+
+.direita{
+    z-index: 1; /* Fica acima da imagem de fundo */
+}

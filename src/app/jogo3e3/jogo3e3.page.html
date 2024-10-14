@@ -1,0 +1,30 @@
+<ion-content>
+  <img src="../../assets/img/FundoDesbord.jpeg" class="fundoDashboard-img"/>
+
+  <h1 class="titulo-com-borda forca">Jogo da Forca</h1>
+  <p class="titulo-com-borda forcadois">Animais</p>
+  <p class="titulo-com-borda forca3">Palavra: {{ palavraOculta() }}</p>
+  <p class="titulo-com-borda forca4">Tentativas restantes: <span class="red">    {{ tentativasRestantes }}    </span> </p>
+
+  <ion-item class="input-container">
+    <ion-label class="letras" position="floating">Digite uma letra</ion-label>
+    <ion-input [(ngModel)]="letraEntrada" (keyup.enter)="tentarLetra()" type="text"></ion-input>
+  </ion-item>
+
+
+ <div class="resultado-container">
+  <div *ngIf="jogoGanho()">
+    <h2 class="vcperdeu">Você ganhou!</h2>
+    <p class="era">A palavra era: {{ palavraEscolhida }}</p>
+    <ion-button class="jogarnova"  epand="block" color="success" (click)="iniciarJogo()">Jogar Novamente</ion-button>
+  </div>
+
+  <div *ngIf="jogoPerdido()">
+    <h2 class="vcperdeu">Você perdeu!</h2>
+    <p class="era">A palavra era: {{ palavraEscolhida }}</p>
+    <ion-button class="jogarnova" expand="block" color="success" (click)="iniciarJogo()">Jogar Novamente</ion-button>
+  </div>
+</div>
+
+<ion-button class="Voltar" expand="block" color="success" (click)="voltarDashboard()">Voltar</ion-button>
+</ion-content>

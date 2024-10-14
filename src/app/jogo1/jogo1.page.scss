@@ -1,0 +1,86 @@
+.fundoDashboard-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 96vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
+
+ion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100%; /* Garante que ocupa toda a altura disponível */
+    background-color: #ffffff !important; /* Cor de fundo branca com prioridade */
+    padding: 16px; /* Adiciona espaço ao redor do conteúdo */
+    position: absolute;
+    top: 12%;
+}
+
+
+
+.titulo-com-borda {
+    color: #ffffff !important; /* Cor do texto */
+    padding: 10px; /* Espaço interno para a borda */
+    text-shadow: 2px 2px 0px black; /* Contorno preto nas letras */
+    font-family: "Anton", sans-serif;
+
+}
+
+
+.botaojogo {
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: #ffffff !important; /* Cor do texto */
+    padding: 10px; /* Espaço interno para a borda */
+    text-shadow: 2px 2px 0px black; /* Contorno preto nas letras */
+    font-family: "Anton", sans-serif;
+
+
+}
+
+
+h1 {
+    color: #10DC60; /* Cor do texto */
+    text-align: center; /* Centraliza o título */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+p {
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: #ffffff !important; /* Cor do texto */
+    padding: 10px; /* Espaço interno para a borda */
+    text-shadow: 2px 2px 0px black; /* Contorno preto nas letras */
+    font-family: "Anton", sans-serif;
+}
+
+.animal-imagem {
+    width: 200px; /* Aumente a largura */
+    height: 200px; /* Aumente a altura */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    margin: 20px auto; /* Espaçamento em volta da imagem */
+}
+
+.palavra-container {
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Altera para relativo para melhor posicionamento */
+    margin-top: 20px; /* Adiciona espaço acima da palavra */
+}
+
+.opcoes-container {
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    flex-wrap: wrap; /* Permite que os botões quebrem para a linha seguinte se não houver espaço suficiente */
+    margin-top: 20px; /* Adiciona um espaço entre a palavra e as opções */
+}
+
+ion-button {
+    margin: 5px; /* Adiciona espaço entre os botões */
+}
