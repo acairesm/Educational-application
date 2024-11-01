@@ -1,0 +1,7 @@
+{
+  "name": "jogosAlf",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
